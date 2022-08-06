@@ -1,38 +1,61 @@
-.App {
+.app{
   text-align: center;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app h1{
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input__form{
+  width: 65%;
+  margin: auto;
+  height: auto;
+  padding: 40px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input__form input{
+  padding: 20px;
+  width: 100%;  
+  border: none;
+}
+
+.input__form input:focus{  
+  outline: none;
+}
+
+.input__form button{
+  padding: 10px 40px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.todolist{
+  margin: auto;
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 15px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.todolist__actions a{
+  margin-left: 15px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.completed{
+  background: #38b638;
+  color: #ffffff !important;
+}
+
+.completed .todolist__actions a{
+  color: #ffffff !important;
 }
